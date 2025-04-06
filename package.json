@@ -1,0 +1,38 @@
+{
+  "name": "express-better-errors",
+  "version": "1.0.0",
+  "description": "A simple Express error handling package to avoid repetitive boilerplate code across projects.",
+  "keywords": [
+    "express",
+    "error-handling",
+    "middleware",
+    "express-middleware",
+    "errors"
+  ],
+  "homepage": "https://github.com/royfreund/express-better-errors#readme",
+  "bugs": {
+    "url": "https://github.com/royfreund/express-better-errors/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/royfreund/express-better-errors.git"
+  },
+  "license": "MIT",
+  "author": "Roy Freund",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write .",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "http-status-codes": "^2.3.0"
+  }
+}
