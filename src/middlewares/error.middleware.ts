@@ -1,7 +1,7 @@
-import { NextFunction, Request, Response } from 'express';
+import { ErrorRequestHandler, NextFunction, Request, Response } from 'express';
 import { BaseError, InternalServerError } from '../errors';
 
-export const errorMiddleware = (
+export const errorMiddleware: ErrorRequestHandler = (
   err: BaseError | Error,
   req: Request,
   res: Response,
